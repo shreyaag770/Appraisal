@@ -1,0 +1,35 @@
+.mainHeading{
+position: absolute;
+width: 586px;
+height: 126px;
+left: 50px;
+top: 100px;
+bottom: 100px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 40px;
+line-height: 60px;
+/* or 150% */
+
+
+color: #000000;
+}
+
+.secondHeading {
+position: absolute;
+width: 586px;
+height: 126px;
+left: 50px;
+top: 100px;
+bottom: 100px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 40px;
+line-height: 60px;
+/* or 150% */
+}
+

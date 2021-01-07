@@ -66,6 +66,7 @@ const Buttons = (props)=> {
       <CardActionArea>
           <CardContent className={classes.extra}>
               <div>
+              <Link to="/praise">
               <Button variant="contained" size="medium" color="primary" className={classes.margin}>
           <div className={classes.extratwo}>
               <div className={classes.extrathree}>
@@ -76,15 +77,16 @@ const Buttons = (props)=> {
               </div>
           </div>
         </Button>
+        </Link>
               </div>
          <div>
-         <Link to="/extra">
+         <Link to="/highfive">
          <Button variant="contained" size="medium" color="primary" className={classes.margin}>
          <div className={classes.extratwo}>
               <div className={classes.extrathree}>
               
 
-             View
+             HIGHFIVES
               
               </div>
               <div className={classes.extrathree}>

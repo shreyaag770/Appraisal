@@ -1,16 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import axios from "axios";
 
-const Praise = () => {
-  console.log("ndjenjrnfrnijfrnjrfnrffnjifrnjirfnjif")
-  let hash = window.location.hash;
-  console.log(hash)
+const Praise = (props) => {
+  const history = useHistory();
+  let hash = props.match.params.id;
+
+  const submitHandler = (id) => {
+    axios
+      .put(`/users/praise/${id}`)
+      .then((res) => {
+        history.push("/");
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <div>
       <div>Do you want to praise ?</div>
-      <Link to="/">
-        <button>Yes</button>
-      </Link>
+      <button onClick={() => submitHandler(hash)}>Yes</button>
       <Link to="/">
         <button>No</button>
       </Link>

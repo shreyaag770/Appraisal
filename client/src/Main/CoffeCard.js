@@ -53,8 +53,6 @@ const CoffeCard = (props) => {
   const classes = useStyles();
   const classesAvatar = avtarUseStyles();
 
-  console.log(props.image);
-
   return (
     <Card className={classes.root} spacing={1} onClick={props.clicked}>
       <CardActionArea>

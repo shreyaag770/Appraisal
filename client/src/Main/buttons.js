@@ -47,8 +47,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Buttons = (props) => {
   const classes = useStyles();
-  console.log("shweta")
-  console.log("sjsj"+props.id)
 
   return (
     <React.Fragment>
